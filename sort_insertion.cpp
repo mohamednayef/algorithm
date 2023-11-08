@@ -11,6 +11,7 @@ int main(){
     cout << "the array before sortin=>";
     print_array(arr,size);
 
+
     sort_insertion(arr,size);
 
     cout << "the array after  sortin=>";

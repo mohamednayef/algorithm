@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-
 int main(){
-    cout << "hello from test\n";
-
+    long long n;
+    cin >> n;
+    cout << 2 * ((n*(n+1))/2) << endl;
     return 0;
 }

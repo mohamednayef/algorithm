@@ -1,0 +1,178 @@
+//************************* Section 1 *************************
+
+// 1. Write an algorithm to find the smallest number from amongest three numbers.
+algorithm_smallest(a,b,c)
+{
+  if(a <= b)
+    min = a;
+  else
+    min = b;
+  if(c <= min)
+    min = c;
+  
+  print "the smallest number is" min
+}
+
+// 2. Write an algorithm to find the greatest common divisor of two numbers
+algorithm_gcd(x,y)
+{
+  while(x != y)
+  {
+    if(x > y)
+      x = x-y; 
+    else
+      y = y-x;
+  }
+  print "the greater common divisor is" y
+}
+
+// 3. Given an array, Write an algorithm to find the maximum element of the array
+algorithm_maximum(a,n)
+{
+  max = a[0];
+  for i=1 to n step 1 do 
+  {
+    if(a[i] > max)
+      max = a[i];
+  }
+  print "the maximum element is" max
+}
+
+// 4. Given an array, Write an algorithm to find the minimum element of the array
+algorithm_minimum(a,n)
+{
+  min = a[0];
+  for i=1 to n step 1 do 
+  {
+    if(a[i] < min)
+      min = a[i];
+  }
+  print "the minimum element is" min
+}
+
+// 5. Write an algorithm to find the second maximum element of the array
+algorithm_second_maximum(a,n)
+{
+  max = arr[0];
+  smax = arr[0];
+  for i = 1 to n step 1 do 
+  {
+    if(a[i] > max)
+    {
+      smax = max;
+      max = a[i];
+    }
+    else if(a[i] > smax)
+      smax = a[i];
+  }
+  print "the second maximum element is" smax
+}
+
+// 6. Write an algorithm to find out the maximum element from a matrix
+algorithm_maximum(a[n][m])
+{
+  max = a[1][1];
+  for i=1 to n do 
+  {
+    for j=1 to m do 
+    {
+      if(a[i][j] > max)
+      {
+        max = a[i][j];
+      }
+    }
+  }
+  print "the maximum element is" max
+}
+
+// 7. Write an algorithm to find the trace of matrix
+algorithm_find_trace(a[][],n)
+{
+  sum = 0;
+  for i=1 to n step 1
+  {
+    sum = sum + a[i][i];
+  }
+  print "the trace of matrix is" sum
+}
+
+// 8. Write an algorithm to sort an array
+algorithm_sort(a,n)     // #that is bubble sort
+{
+  for i=1 to n-1 step 1 do
+  {
+    for j=1 to n step 1 do 
+    {
+      if(a[j] > a[j+1])
+      {
+        tmp = a[j];
+        a[j] = a[j+1];
+        a[j+1] = tmp;
+      }
+    }
+  }
+}
+
+// 9. Write an algorithm to search an element from the array
+algorithm_linear_search(a,n,item)
+{
+  for i=1 to n do 
+  {
+    if(a[i] == item)
+    {
+      write "found"
+      exit;
+    }
+  }
+  wirte "not found"
+  exit;
+}
+
+//************************* Section 2 *************************
+
+Big oh notation
+Omega notation
+Theta notatoin 
+Small oh notation 
+Small omega notatoin
+
+//************************* Section 3 *************************
+
+// 1. Write an algorithm calculate the factorial of number
+algorithm_factorial(n)
+{
+  if(n==0 || n==1)
+    return 1;
+  else 
+    return (n * factorial(n-1));
+}
+
+// 2. Write an algorithm calculate the fibonanci of number
+algorithm_fib(n)
+{
+  if(n==1 || n==2)
+    return 1;
+  else 
+    return (fib(n-1) + fib(n-2));
+}
+
+// 3. Tower of Hanoi problem
+// =>move n desks from peg x to peg z using peg y as auxiliary
+algorithm_Hanoi(n)
+{
+  
+}
+
+// 4. powers
+algorithm_power(x,n){
+  product = x;
+  for i=1 to n step 1 do 
+  {
+    product = product * x;
+  }
+  print "the power of" x "is" product;
+}
+
+//************************* Section 4 *************************
+//************************* Section 5 *************************
+//************************* Section 6 *************************
